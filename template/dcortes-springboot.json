@@ -1,0 +1,24 @@
+{
+    "kind": "ImageStream",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "stratio-springboot"
+    },
+    "spec": {
+        "dockerImageRepository": "dcortesf/dcortes-springboot",
+        "tags": [
+            {
+                "name": "1.0",
+                "annotations": {
+                    "description": "Base for Springboot apps (development)",
+                    "iconClass": "icon-java",
+                    "tags": "builder,java,xpaas",
+                    "supports":"java:8,xpaas:1.0",
+                    "sampleRepo": "https://github.com/jboss-openshift/openshift-quickstarts",
+                    "sampleContextDir": "undertow-servlet",
+                    "version": "1.0"
+                }
+            }
+        ]
+    }
+}
