@@ -8,6 +8,6 @@ public class DemoApp {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApp.class, args);
-		System.out.println("Hola3");
+		System.out.println("Running default application in container");
 	}
 }

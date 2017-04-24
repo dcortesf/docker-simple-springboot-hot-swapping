@@ -20,6 +20,7 @@ RUN groupadd --gid $GID java && useradd --uid $UID -m -g java java && \
        strace \
        unzip \
        rsync \
+       git \
        wget && \
     yum clean all
 
