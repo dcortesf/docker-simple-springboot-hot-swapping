@@ -15,7 +15,7 @@
 # limitations under the License.
 
 echo "================================"
-echo "    Starting Springboot v.0.6   "
+echo "    Starting Springboot v.0.7   "
 echo "================================"
 echo $(readlink -f /usr/bin/java | sed "s:/bin/java::")
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")

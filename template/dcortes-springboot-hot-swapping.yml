@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Template
 metadata:
   annotations:
-    description: Template for deploy Java SE applications
+    description: Template for deploy Springboot applications with hot swapping
     iconClass: icon-openjdk
-    tags: instant-app,javase,openjdk
+    tags: instant-app,javase,openjdk,java
   name: springboot-stratio
   namespace: openshift
 objects:
@@ -81,7 +81,7 @@ objects:
                 fieldPath: metadata.namespace
           - name: TZ
             value: ${TZ}
-          image: dcortesf/dcortes-springboot:latest
+          image: dcortesf/dcortes-springboot-hot-swapping:latest
           imagePullPolicy: Always
           name: ${APP_NAME}
           ports:
@@ -135,13 +135,6 @@ parameters:
   displayName: Pods Max Memory
   name: POD_MAX_MEM
   value: "512"
-- description: fully qualified domain name of the Wily Introscope MoM server
-  displayName: Wily MOM fqdn
-  name: WILY_MOM_FQDN
-- description: port of the Wily Introscope MoM server
-  displayName: Wily MOM port
-  name: WILY_MOM_PORT
-  value: "5001"
 - description: TimeZone for the running containers.
   displayName: TimeZone
   name: TZ

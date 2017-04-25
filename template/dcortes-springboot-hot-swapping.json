@@ -5,7 +5,7 @@
         "name": "stratio-springboot"
     },
     "spec": {
-        "dockerImageRepository": "dcortesf/dcortes-springboot",
+        "dockerImageRepository": "dcortesf/dcortes-springboot-how-swapping",
         "tags": [
             {
                 "name": "1.0",

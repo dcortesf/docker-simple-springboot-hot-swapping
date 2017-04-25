@@ -34,6 +34,8 @@ RUN wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven
 COPY application/ /tmp/
 ADD scripts $HOME/scripts
 
+RUN git config --global user.name "Java"
+RUN git config --global user.email "dcortes@stratio.com"
 RUN chown -R java:java $HOME
 RUN chown -R java:java $HOME/scripts
 RUN chmod 777 $HOME/scripts/start.sh
